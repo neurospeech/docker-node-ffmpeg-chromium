@@ -1,5 +1,5 @@
 # Build Stage 2: Copy Build Stage 1 files in to Stage 2. Install chromium dependencies and chromium.
-FROM node:22-slim
+FROM node:20-buster-slim
 RUN apt-get update \
     && apt-get install -y x11-apps\
     && apt-get install -y wget gnupg chromium mesa-va-drivers libva-drm2 libva-x11-2 mesa-utils mesa-utils-extra nodejs npm fonts-noto-color-emoji\
